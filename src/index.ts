@@ -1,3 +1,3 @@
-import run from "two";
+import run from "three";
 
-run();
+console.log(run())
