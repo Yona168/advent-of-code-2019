@@ -43,7 +43,7 @@ export default function() {
       function push() {
         const xMap = statusMap.get(offsety) || new Map();
         let status: number[] | undefined = xMap.get(offsetx);
-        if (status !== undefined && status.length > 0 && status[wireNumber] === undefined) {
+        if (status && status.length > 0 && !status[wireNumber]) {
           intersectionCoords.push({ x: offsetx, y: offsety });
           stepsToIntersection.push(status[0] + amountSteps);
         } else {
