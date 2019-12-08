@@ -1,3 +1,3 @@
-import run from "seven";
+import run from "eight";
 
 console.log(run().two())
